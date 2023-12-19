@@ -52,6 +52,7 @@ body {
 
 li {
   margin: 5px;
+  font-size: 2em;
 }
 
 hr {
@@ -361,6 +362,10 @@ select:disabled {
   opacity: 0;
   transform: translateY(50%);
   transition: opacity 1s, transform 2s;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .slide-in-text.active {
