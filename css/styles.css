@@ -8203,7 +8203,8 @@ ul {
   text-transform: uppercase !important;
   flex-wrap: wrap;
   color: whitesmoke;
-  max-width: 80%vw;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .text-capitalize {
