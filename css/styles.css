@@ -8192,6 +8192,7 @@ ul {
 .text-uppercase {
   text-transform: uppercase !important;
   text-wrap: wrap;
+  color: whitesmoke;
 }
 
 .text-capitalize {
