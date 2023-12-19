@@ -4615,6 +4615,7 @@ ul {
   white-space: nowrap;
   vertical-align: baseline;
   flex-wrap: wrap;
+  width: 65%;
   border-radius: var(--bs-badge-border-radius);
 }
 .badge:empty {
