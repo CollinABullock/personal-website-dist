@@ -8191,8 +8191,9 @@ ul {
 
 .text-uppercase {
   text-transform: uppercase !important;
-  text-wrap: wrap;
+  flex-wrap: wrap;
   color: whitesmoke;
+  max-width: 80%vw;
 }
 
 .text-capitalize {
