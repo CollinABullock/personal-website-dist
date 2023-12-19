@@ -4612,12 +4612,11 @@ ul {
   line-height: 1;
   color: var(--bs-badge-color);
   text-align: center;
-  white-space: nowrap;
+  white-space: normal; /* Change nowrap to normal for text wrapping */
   vertical-align: baseline;
-  flex-wrap: wrap;
-  width: 65%;
   border-radius: var(--bs-badge-border-radius);
 }
+
 .badge:empty {
   display: none;
 }
@@ -5485,6 +5484,16 @@ ul {
     overflow-y: auto;
   }
 }
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 767px) {
+  .badge {
+    display: block; /* Optionally make it a block element on smaller screens */
+    text-align: left; /* Adjust text alignment as needed */
+    /* Adjust other properties if necessary */
+  }
+}
+
 @media (max-width: 991.98px) {
   .modal-fullscreen-lg-down {
     width: 100vw;
