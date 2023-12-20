@@ -3761,7 +3761,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
@@ -7982,7 +7982,6 @@ ul {
 }
 
 .py-5 {
- 
   background-color: #4cc9f0;
 }
 
@@ -11627,7 +11626,6 @@ html {
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
   border-radius: 100px;
   margin-top: 20px;
-  width: 85%;
 }
 
 .text-gradient {
@@ -11654,15 +11652,22 @@ html {
   border-radius: 5vw;
   margin-top: 5vw;
   max-height: auto;
-  max-width: 60%
+  max-width: 90%;
+  align-items: center;
 }
-.profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
-  max-width: 60%;
+
+.profile-img {
   bottom: 0;
-  left: 1000%;
-  transform: translateX(-50%);
+  max-width: 20px !important;
+  max-height: fit-content;  
+  object-fit: contain;
+}
+
+.collinpic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -11671,9 +11676,10 @@ html {
     height: 60vw;
     width: 60vw;
   }
-  .profile .profile-img {
-    height: auto;
-    max-width: 60%;
+ .profile-img {
+    max-width: 100%;
+    max-height: fit-content;  
+    object-fit: contain;
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11692,39 +11698,29 @@ html {
     left: -4vw;
   }
 }
+
 @media (min-width: 768px) {
   .profile {
     height: 50vw;
     width: 50vw;
   }
-  .profile .profile-img {
-    height: auto;
-    max-width: fit-content;
+  .profile-img {
+    max-width: 60%;
+    max-height: fit-content;  
+    object-fit: contain;
   }
-  .profile .dots-1 {
-    width: 3vw;
-    right: 1.5vw;
-  }
-  .profile .dots-2 {
-    width: 3vw;
-    right: -4vw;
-  }
-  .profile .dots-3 {
-    width: 3vw;
-    left: 1.5vw;
-  }
-  .profile .dots-4 {
-    width: 3vw;
-    left: -4vw;
-  }
+
 }
+
 @media (min-width: 992px) {
   .profile {
     height: 40vw;
     width: 40vw;
   }
-  .profile .profile-img {
-    height: 45vw;
+ .profile-img {
+    max-width: 100%;
+    max-height: fit-content;  
+    object-fit: contain;
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11743,13 +11739,15 @@ html {
     left: -2vw;
   }
 }
+
 @media (min-width: 1200px) {
   .profile {
     height: 35vw;
     width: 35vw;
   }
-  .profile .profile-img {
-    height: 40vw;
+  .profile {
+    max-width: 100%;
+    max-height: fit-content;  
   }
   .profile .dots-1 {
     width: 1.5vw;
