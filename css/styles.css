@@ -180,6 +180,8 @@ small, .small {
   font-size: 0.875em;
   color: whitesmoke;
   text-shadow: 1px 1px 1px black;
+  text-align: center;
+  align-items: center;
 }
 
 mark, .mark {
@@ -369,7 +371,7 @@ select:disabled {
 .slide-in-text {
   opacity: 0;
   transform: translateY(90%);
-  transition: opacity 2s, transform 2s;
+  transition: opacity .5s, transform 1s;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -5499,8 +5501,7 @@ ul {
 @media (max-width: 767px) {
   .badge {
     display: block; /* Optionally make it a block element on smaller screens */
-    text-align: left; /* Adjust text alignment as needed */
-    /* Adjust other properties if necessary */
+    text-align: left; 
   }
 }
 
@@ -8164,7 +8165,6 @@ ul {
 
 .fw-bolder {
   font-weight: bolder !important;
-  padding-right: 20px;
 }
 
 .lh-1 {
@@ -8298,7 +8298,8 @@ ul {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: whitesmoke
+  color: whitesmoke;
+  text-align: center;
 }
 
 .skills {
@@ -11626,6 +11627,8 @@ html {
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
   border-radius: 100px;
   margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-gradient {
@@ -11664,7 +11667,7 @@ html {
 }
 
 .collinpic {
-  max-width: 100%;
+  max-width: 20px;
   height: auto;
   display: block;
   margin: 0 auto;
