@@ -1,5 +1,5 @@
 function handleSlideIn() {
-  const elements = document.querySelectorAll('.slide-in, .slide-in-text, .slide-in-h2');
+  const elements = document.querySelectorAll('.slide-in, .slide-in-text, .slide-in-h2, slide-in-active');
 
   elements.forEach(element => {
     if (isInViewport(element)) {

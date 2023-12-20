@@ -347,27 +347,27 @@ select:disabled {
 .slide-in-h2 {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 5s ease-out, transform 0.5s ease-out;
 }
 
 /* When in viewport */
 .slide-in-h2.in-viewport {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 2s ease-out, transform 2s ease-out;
+  transition: opacity 5s ease-out, transform 5s ease-out;
 }
 
 .slide-in img {
   opacity: 0;
   transform: translateY(50%);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 5s, transform 1s;
 }
 
 /* CSS for sliding in the text */
 .slide-in-text {
   opacity: 0;
-  transform: translateY(50%);
-  transition: opacity 1s, transform 2s;
+  transform: translateY(90%);
+  transition: opacity 4s, transform 2s;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -4619,9 +4619,10 @@ ul {
   line-height: 1;
   color: var(--bs-badge-color);
   text-align: center;
-  white-space: normal; /* Change nowrap to normal for text wrapping */
+  white-space: normal;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
+  margin-top: 20px;
 }
 
 .badge:empty {
@@ -7977,8 +7978,8 @@ ul {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  
+  padding-bottom: 4rem !important;
   background-color: #4cc9f0;
 }
 
@@ -8237,7 +8238,8 @@ ul {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: white;
+  text-shadow: 5px 5px 5px red;
 }
 
 .text-secondary {
