@@ -11653,7 +11653,7 @@ html {
   width: 75vw;
   border-radius: 5vw;
   margin-top: 5vw;
-  max-height: 40rem;
+  max-height: auto;
   max-width: 60%
 }
 .profile .profile-img {
@@ -11672,7 +11672,7 @@ html {
     width: 60vw;
   }
   .profile .profile-img {
-    height: 65vw;
+    height: auto;
     max-width: 60%;
   }
   .profile .dots-1 {
@@ -11698,7 +11698,8 @@ html {
     width: 50vw;
   }
   .profile .profile-img {
-    height: 55vw;
+    height: auto;
+    max-width: fit-content;
   }
   .profile .dots-1 {
     width: 3vw;
