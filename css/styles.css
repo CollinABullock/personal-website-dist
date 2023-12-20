@@ -8164,6 +8164,7 @@ ul {
 
 .fw-bolder {
   font-weight: bolder !important;
+  padding-right: 20px;
 }
 
 .lh-1 {
