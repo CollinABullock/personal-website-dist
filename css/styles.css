@@ -370,7 +370,7 @@ select:disabled {
   transition: opacity 4s, transform 2s;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+
   padding-bottom: 0;
 }
 
@@ -8294,7 +8294,7 @@ ul {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: black
 }
 
 .skills {
