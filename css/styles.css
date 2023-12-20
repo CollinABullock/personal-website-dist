@@ -178,6 +178,8 @@ strong {
 
 small, .small {
   font-size: 0.875em;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px black;
 }
 
 mark, .mark {
@@ -367,7 +369,7 @@ select:disabled {
 .slide-in-text {
   opacity: 0;
   transform: translateY(90%);
-  transition: opacity 4s, transform 2s;
+  transition: opacity 2s, transform 2s;
   align-items: center;
   justify-content: center;
 
@@ -7070,7 +7072,6 @@ ul {
 
 .d-flex {
   display: flex !important;
-  
 }
 
 .d-inline-flex {
@@ -7714,6 +7715,7 @@ ul {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+  padding-top: 20px;
 }
 
 .mb-auto {
@@ -8240,6 +8242,7 @@ ul {
   --bs-text-opacity: 1;
   color: white;
   text-shadow: 5px 5px 5px red;
+  padding-bottom: 20px;
 }
 
 .text-secondary {
@@ -8294,7 +8297,7 @@ ul {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: black
+  color: whitesmoke
 }
 
 .skills {
@@ -8467,7 +8470,7 @@ ul {
 }
 
 .rounded-4 {
-  border-radius: var(--bs-border-radius-xl) !important;
+  border-radius: 20px
 }
 
 .rounded-5 {
@@ -9154,6 +9157,7 @@ ul {
   }
   .d-md-flex {
     display: flex !important;
+    border-radius: 20px;
   }
   .d-md-inline-flex {
     display: inline-flex !important;
@@ -11623,7 +11627,7 @@ html {
 
 .text-gradient {
   color: whitesmoke;
-}
+  
 
 .rounded-4 {
   border-radius: 1rem !important;
