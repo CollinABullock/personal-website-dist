@@ -2523,6 +2523,11 @@ textarea.form-control-lg {
   position: relative;
   z-index: 2;
 }
+
+.bi-github {
+  margin: 10px;
+}
+
 .input-group .btn:focus {
   z-index: 5;
 }
@@ -4242,16 +4247,26 @@ ul {
 }
 
 .projects {
-  background-color: black
+  margin: 30px;
+  padding: 10px;
+}
+
+.projects:hover{
+  background-color: red;
+  color: white;
+  border-radius: 20px;
 }
 
 .icons {
  display: flex;
  flex-direction: column;
+ justify-content: space-between;
  align-items: center;
- color: black !important;
- padding: 10px;
- font-size: 1em;
+ background-color: #4361ee;
+ color: black;
+ font-size: .75em;
+ outline: 5px 5px 5px solid black;
+ border-radius: 30px;
 }
 
 
@@ -11665,6 +11680,7 @@ html {
 
 .text-gradient {
   color: whitesmoke;
+  padding: 10px; }
   
 
 .rounded-4 {
