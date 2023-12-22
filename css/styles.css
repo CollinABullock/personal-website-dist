@@ -522,6 +522,7 @@ progress {
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 300;
   line-height: 1.2;
+
 }
 @media (min-width: 1200px) {
   .display-3 {
@@ -642,6 +643,7 @@ progress {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
+  max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
@@ -3636,6 +3638,7 @@ textarea.form-control-lg {
   color: var(--bs-nav-link-color);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  max-width: 20%
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3759,12 +3762,10 @@ textarea.form-control-lg {
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
   background-color: #f72585;
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .navbar > .container,
@@ -3810,6 +3811,8 @@ ul {
   list-style: none;
   color: whitesmoke;
   text-shadow: 5px 5px 5px red;
+ width: 100%;
+ justify-content: space-between;
 }
 
 .navbar-nav .show > .nav-link,
@@ -4070,6 +4073,7 @@ ul {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
+
   .navbar-expand-xxl .navbar-nav {
     flex-direction: row;
   }
@@ -4244,11 +4248,6 @@ ul {
     width: 80%;
     height: auto;
   }
-}
-
-.projects {
-  margin: 30px;
-  padding: 10px;
 }
 
 .projects:hover{
@@ -4664,7 +4663,6 @@ ul {
   --bs-badge-color: #fff;
   --bs-badge-border-radius: 0.375rem;
   display: inline-block;
-  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
   font-size: var(--bs-badge-font-size);
   font-weight: var(--bs-badge-font-weight);
   line-height: 1;
@@ -4673,7 +4671,8 @@ ul {
   white-space: normal;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
-  margin-top: 20px;
+ 
+  
 }
 
 .badge:empty {
@@ -7118,7 +7117,7 @@ ul {
 }
 
 .d-flex {
-  display: flex !important;
+  display: flex !important;  
 }
 
 .d-inline-flex {
@@ -8238,6 +8237,7 @@ ul {
 
 .text-center {
   text-align: center !important;
+  padding-top: 20px;
 }
 
 .text-decoration-none {
@@ -9194,6 +9194,7 @@ ul {
   }
   .d-md-grid {
     display: grid !important;
+    align-items: center;
   }
   .d-md-table {
     display: table !important;
@@ -11674,8 +11675,11 @@ html {
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
   border-radius: 100px;
   margin-top: 20px;
-  align-items: center;
+  align-items: right;
   justify-content: center;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
 }
 
 .text-gradient {
@@ -11715,8 +11719,7 @@ html {
 }
 
 .collinpic {
-  max-width: 20px;
-  height: auto;
+  max-width: 80%;
   display: block;
   margin: 0 auto;
 }
