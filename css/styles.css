@@ -267,6 +267,8 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
@@ -606,8 +608,11 @@ progress {
 }
 
 .img-fluid {
-  width: 50%;
+  max-width: 50%;
   height: auto;
+  max-height: 100%;
+  margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .img-thumbnail {
@@ -4202,7 +4207,7 @@ ul {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card > hr {
@@ -4244,9 +4249,7 @@ ul {
   }
 
   .card .card-body img {
-    margin-bottom: 15px; /* Adds some space between the image and text */
-    width: 80%;
-    height: auto;
+    margin-bottom: 5px; /* Adds some space between the image and text */
   }
 }
 
