@@ -613,6 +613,7 @@ progress {
   max-height: 100%;
   margin-top: 0 !important;
     margin-bottom: 0 !important;
+    margin-right: 5px;
 }
 
 .img-thumbnail {
@@ -4190,9 +4191,6 @@ ul {
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
-  --bs-card-cap-color: ;
-  --bs-card-height: ;
-  --bs-card-color: ;
   --bs-card-bg: #fff;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
@@ -4208,6 +4206,12 @@ ul {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
 }
 
 .card > hr {
