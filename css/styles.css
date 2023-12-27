@@ -613,7 +613,6 @@ progress {
   max-height: 100%;
   margin-top: 0 !important;
     margin-bottom: 0 !important;
-    margin-right: 5px;
 }
 
 .img-thumbnail {
@@ -8568,6 +8567,13 @@ ul {
 
 .invisible {
   visibility: hidden !important;
+}
+
+@media screen and (max-width: 767px) {
+  img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: 576px) {
