@@ -16,8 +16,8 @@ nav {
 }
 
 .contact-icons {
-  margin: 10px;
   font-size: 5em;
+  max-width: 100%;
 }
 
 .contact-text {
@@ -2397,6 +2397,22 @@ textarea.form-control-lg {
 
 .contact-form {
   padding: 20px
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-wrap: wrap; /* Allow the icons to wrap on smaller screens */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center;
+    font-size: 2em;
+  }
+
+  .contact-links a {
+    flex: 0 0 33.33%; /* Make each icon take up 1/3 of the container width */
+    max-width: 100px; /* Limit the width of each icon */
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 iframe {
