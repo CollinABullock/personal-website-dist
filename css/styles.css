@@ -623,6 +623,7 @@ progress {
   max-height: 100%;
   margin-top: 0 !important;
     margin-bottom: 0 !important;
+    border-radius: 20px;
 }
 
 .img-thumbnail {
@@ -2394,6 +2395,18 @@ textarea.form-control-lg {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+}
+
+.about-cards {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .contact-form {
