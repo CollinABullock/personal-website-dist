@@ -2402,7 +2402,7 @@ textarea.form-control-lg {
 @media (max-width: 768px) {
   .contact-links {
     flex-wrap: wrap; /* Allow the icons to wrap on smaller screens */
-    justify-content: center; /* Center the icons horizontally */
+    justify-content: space-evenly; /* Center the icons horizontally */
     align-items: center;
     font-size: 2em;
   }
@@ -2411,7 +2411,7 @@ textarea.form-control-lg {
     flex: 0 0 33.33%; /* Make each icon take up 1/3 of the container width */
     max-width: 100px; /* Limit the width of each icon */
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -5548,6 +5548,10 @@ ul {
   overflow-y: auto;
 }
 
+footer {
+  margin: 0 !important;
+}
+
 @media (max-width: 575.98px) {
   .modal-fullscreen-sm-down {
     width: 100vw;
@@ -7170,7 +7174,8 @@ ul {
 }
 
 .contact-links {
-  margin-top: -10px !important;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .d-inline-flex {
@@ -7761,7 +7766,8 @@ ul {
 }
 
 .mt-auto {
-  margin-top: auto !important;
+  margin-top: 10px;
+  margin-bottom: 0 !important;
 }
 
 .me-0 {
@@ -8073,10 +8079,10 @@ ul {
   padding-bottom: 1rem !important;
 }
 
-.py-4 {
+/* .py-4 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
-}
+} */
 
 .py-5 {
   background-color: #4cc9f0;
