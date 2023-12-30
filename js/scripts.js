@@ -1,11 +1,25 @@
 function handleSlideIn() {
-  const elements = document.querySelectorAll('.slide-in, .slide-in-text, .slide-in-h2, slide-in-active');
+  const elements = document.querySelectorAll('.slide-in, .slide-in-text, .slide-in-h2, .slide-in-active');
 
   elements.forEach(element => {
     if (isInViewport(element)) {
       element.classList.add('active'); // Add 'active' class when element is in viewport
     }
   });
+}
+
+function showOverlay(title, info) {
+  // Set content for the overlay card
+  document.getElementById('overlayTitle').innerText = title;
+  document.getElementById('overlayInfo').innerText = info;
+
+  // Show the overlay card
+  document.getElementById('overlayCard').style.display = 'flex';
+}
+
+function hideOverlay() {
+  // Hide the overlay card
+  document.getElementById('overlayCard').style.display = 'none';
 }
 
 // Event listener for scroll event to check if elements are in viewport
