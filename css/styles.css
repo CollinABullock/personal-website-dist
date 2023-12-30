@@ -18,6 +18,7 @@ nav {
 .contact-icons {
   font-size: 5em;
   max-width: 100%;
+  margin: 0px !important;
 }
 
 .contact-text {
@@ -4209,6 +4210,10 @@ ul {
   overflow-y: visible;
 }
 
+.resume {
+  align-items: center;
+}
+
 .navbar-dark {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
@@ -4237,7 +4242,8 @@ ul {
   --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   min-width: 0;
   height: auto;
   flex-direction: row;
@@ -5515,13 +5521,6 @@ ul {
     --bs-modal-width: 800px;
   }
 }
-
-.nav-item:hover {
-  border: 5px solid whitesmoke !important;
-  border-radius: 20px;
-}
-
-
 
 @media (min-width: 1200px) {
   .modal-xl {
