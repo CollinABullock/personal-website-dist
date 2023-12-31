@@ -557,7 +557,6 @@ progress {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 300;
   line-height: 1.2;
-  margin-bottom: 40px;
   text-shadow: 5px 5px 5px red;
 }
 @media (min-width: 1200px) {
@@ -624,6 +623,7 @@ progress {
   left: 0;
   width: 100%;
   height: 100%;
+  font-size: 4em;
   color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
