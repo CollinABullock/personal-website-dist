@@ -22,6 +22,15 @@ function hideOverlay() {
   document.getElementById('overlayCard').style.display = 'none';
 }
 
+const images = document.querySelectorAll('.img-fluid');
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    const title = image.alt; // You can customize this based on your needs
+    const info = "Additional information goes here"; // You can customize this based on your needs
+    showOverlay(title, info);
+  });
+});
+
 // Event listener for scroll event to check if elements are in viewport
 window.addEventListener('scroll', () => {
   handleSlideIn();
