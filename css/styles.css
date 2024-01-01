@@ -565,6 +565,11 @@ progress {
   }
 }
 
+.close-button {
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 300;
