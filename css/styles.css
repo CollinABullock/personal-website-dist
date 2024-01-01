@@ -2008,6 +2008,10 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .overlay-card{
+    font-size: 1em;
+  }
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {

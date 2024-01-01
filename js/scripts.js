@@ -31,6 +31,13 @@ function showOverlay(title, info, img) {
   overlayCard.style.display = 'flex';
 }
 
+// document.addEventListener('click', (event) => {
+//   const overlayCard = document.getElementById('overlayCard');
+//   if (!overlayCard.contains(event.target)) {
+//     hideOverlay();
+//   }
+// });
+
 
 function hideOverlay() {
   // Hide the overlay card
