@@ -13,14 +13,14 @@ function showOverlay(title, info, img) {
   const overlayCard = document.getElementById('overlayCard');
   
   overlayCard.innerHTML = `
-    <div class="card overflow-hidden shadow rounded-4 border-0">
+    <div class="card overflow-hidden shadow rounded-4 border-0 " onclick="hideOverlay()">
       <div class="card-body p-0">
         <img class="img-fluid slide-in" src="${img}" alt="${title}" />
         <div class="d-flex align-items-center">
           <div class="p-5">
             <h2 class="bg-light p-4 rounded-4 fw-bolder text-primary fw-bolder mb-2">${title}</h2>
             <p>${info}</p>
-            <button class="close-button" onclick="hideOverlay()">Close</button>
+            
           </div>
         </div>
       </div>
@@ -31,12 +31,7 @@ function showOverlay(title, info, img) {
   overlayCard.style.display = 'flex';
 }
 
-// document.addEventListener('click', (event) => {
-//   const overlayCard = document.getElementById('overlayCard');
-//   if (!overlayCard.contains(event.target)) {
-//     hideOverlay();
-//   }
-// });
+
 
 
 function hideOverlay() {
