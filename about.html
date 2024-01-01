@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Collin Bullock is a fullstack web developer and you should hire him.  He's adept in javascript, HTML, CSS, React, Git, Github, UI and UX, angular, Python, and much more" />
+        <meta name="description" content="Collin Bullock is a fullstack web developer adept in javascript, Node JS, HTML, CSS, React, Git, Github, UI and UX, angular, Python, and much more" />
         <meta name="author" content="This website was made by Collin Bullock to show that he can do such a thing and in fact should be paid to make websites" />
         <title>Collin's Life</title>
         <!-- Favicon-->
@@ -40,43 +40,12 @@
             <section class="py-5">
                 <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0 slide-in-text"><span class="text-gradient d-inline">What is Collin all about?<br /></span></h1>
+                        <h1 class="display-5 fw-bolder slide-in-text"><span class="text-gradient d-inline">What is Collin all about?<br /></span></h1>
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- About Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <img class="img-fluid slide-in" src="https://i.ibb.co/7tts7dJ/Screenshot-2023-12-27-115909.png" alt="Collin loves to run" />
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                           <h2 class="bg-light p-4 rounded-4 fw-bolder slide-in-text text-primary fw-bolder mb-2">Collin loves to run!</h2>
-                                    
-                                            <p>Collin is a committed long-distance runner, falling in love with the sport after spontaneously training for and then running the 2008 Chicago marathon.  Since then he has completed the Chicago marathon three additional times, and has also done a plethora of other half marathons, triathlons, and 5ks.  He has recently gotten into mud races, having completed the 10k Tough Mudder obstacle race every year since 2018.</p>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!-- About Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                           <h2 class="bg-light p-4 rounded-4 fw-bolder slide-in-text text-primary fw-bolder mb-2">Collin loves to rock!</h2>
-                                    
-                                            <p>Music has long been a part of Collin's life.  At the age of 12 he taught himself to play guitar and sing by watching videos of Billie Joe Armstrong from Green Day.  Afterwards he started writing his own songs, forming bands, and touring the country.  He was lucky enough to manage School of Rock for ten years, passing on his love of self expression through music to the next generation of rock stars!</p>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid slide slide" src="https://i.ibb.co/3NW8rsD/north-bar-rocking-PNG.png" alt="Collin loves to run" />
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="about-cards">
+                      <img class="img-fluid about running slide-in-text" src="https://i.ibb.co/7tts7dJ/Screenshot-2023-12-27-115909.png" alt="Collin loves to run" onclick="showOverlay('Collin loves to run', 'Additional information about the first image.')" />
+                    <img class="img-fluid about rocking slide-in-text" src="https://i.ibb.co/3NW8rsD/north-bar-rocking-PNG.png" alt="Collin loves to rock" onclick="showOverlay('Collin loves to rock', 'Additional information about the second image.')" />
                     </div>
-                </div>
             </section>
        
         </main>
@@ -100,4 +69,6 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+    <div id="overlayCard" class="overlay-card">
+      
 </html>
