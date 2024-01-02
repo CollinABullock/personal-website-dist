@@ -60,11 +60,11 @@ images.forEach(image => {
 });
 
 const images3 = document.querySelectorAll('.travel');
-images.forEach(image => {
+images3.forEach(image => {
   image.addEventListener('click', () => {
     const title = "Collin loves to travel"; //
-    const info = "Collin is a committed long-distance runner, falling in love with the sport after spontaneously training for and then running the 2008 Chicago marathon. Since then he has completed the Chicago marathon three additional times, and has also done a plethora of other half marathons, triathlons, and 5ks. He has recently gotten into mud races, having completed the 10k Tough Mudder obstacle race every year since 2018."; // 
-    const img = "https://i.ibb.co/7tts7dJ/Screenshot-2023-12-27-115909.png"
+    const info = "Collin is a committed traveling, taking several trips a year and having spent over 12 months living in Europe when he was younger.  He's visited every contient except Africa and Antarctica (and he plans to go to those places sooner rather than later) but he has an especialy love for the UK, where he has family.  London remains his favorite place in the world, but Portland and Tokyo are up there as well!"; // 
+    const img = "https://i.ibb.co/cggkLpJ/collin-traveling-TALL.jpg"
     showOverlay(title, info, img);
   });
 });
