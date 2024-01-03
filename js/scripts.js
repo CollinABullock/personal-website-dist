@@ -13,7 +13,7 @@ function showOverlay(title, info, img) {
   const overlayCard = document.getElementById('overlayCard');
   
   overlayCard.innerHTML = `
-  <div class="card overflow-hidden shadow rounded-4 border-0 sliding-card" onclick="hideOverlay()">
+  <div class="card overflow-hidden shadow rounded-4 border-0 slide" onclick="hideOverlay()">
     <div class="card-body p-0">
       <img class="img-fluid slide-in" src="${img}" alt="${title}" />
       <div class="d-flex align-items-center">

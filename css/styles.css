@@ -677,8 +677,8 @@ progress {
 }
 
 .about-img {
-  max-width: 33%;
-  height: 100%;
+  max-width: 33.3%;
+  height: 900px;
   max-height: 100%;
   margin-top: 0 !important;
     margin-bottom: 0 !important;
