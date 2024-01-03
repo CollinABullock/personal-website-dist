@@ -67,7 +67,7 @@ const images3 = document.querySelectorAll('.travel');
 images3.forEach(image => {
   image.addEventListener('click', () => {
     const title = "Collin loves to travel"; //
-    const info = "Collin is a committed traveler!  He's visited every contient except Africa and Antarctica (and he plans to go to those places sooner rather than later) but he has an especialy love for the UK, where he has extended family.  London remains his favorite place in the world, but Portland and Tokyo are up there as well!"; // 
+    const info = "Collin is a committed traveler!  He's visited every contient except Africa and Antarctica (and he plans to go to those places sooner rather than later) but he has a special love for the UK, where he has extended family.  London remains his favorite place in the world, but Portland and Tokyo are up there as well!"; // 
     const img = "https://i.ibb.co/cggkLpJ/collin-traveling-TALL.jpg"
     showOverlay(title, info, img);
   });
