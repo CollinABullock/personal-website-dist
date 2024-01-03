@@ -2436,6 +2436,10 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
+.overlayCardTitle {
+  font-size: 2em;
+}
+
 .about-cards {
   padding: 20px;
   display: flex;
