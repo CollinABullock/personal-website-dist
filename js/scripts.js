@@ -13,30 +13,34 @@ function showOverlay(title, info, img) {
   const overlayCard = document.getElementById('overlayCard');
   
   overlayCard.innerHTML = `
-    <div class="card overflow-hidden shadow rounded-4 border-0 " onclick="hideOverlay()">
-      <div class="card-body p-0">
-        <img class="img-fluid slide-in" src="${img}" alt="${title}" />
-        <div class="d-flex align-items-center">
-          <div class="p-5">
-            <h2 class="bg-light p-4 rounded-4 fw-bolder text-primary fw-bolder mb-2 overlayCardTitle">${title}</h2>
-            <p>${info}</p>
-            
-          </div>
+  <div class="card overflow-hidden shadow rounded-4 border-0 sliding-card" onclick="hideOverlay()">
+    <div class="card-body p-0">
+      <img class="img-fluid slide-in" src="${img}" alt="${title}" />
+      <div class="d-flex align-items-center">
+        <div class="p-5">
+          <h2 class="bg-light p-4 rounded-4 fw-bolder text-primary fw-bolder mb-2 overlayCardTitle">${title}</h2>
+          <p>${info}</p>
         </div>
       </div>
     </div>
-  `;
+  </div>
+`;
 
   // Show the overlay card
   overlayCard.style.display = 'flex';
+  overlayCard.classList.add('slide-in-overlay');
 }
-
-
-
 
 function hideOverlay() {
   // Hide the overlay card
-  document.getElementById('overlayCard').style.display = 'none';
+  const overlayCard = document.getElementById('overlayCard');
+  overlayCard.style.display = 'none';
+  overlayCard.classList.remove('slide-in-overlay');
+
+  // Add an event listener to remove the 'slide-in-overlay' class after the animation completes
+  overlayCard.addEventListener('transitionend', () => {
+    overlayCard.classList.remove('slide-in-overlay');
+  }, { once: true });
 }
 
 const images2 = document.querySelectorAll('.rocking');

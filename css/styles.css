@@ -25,6 +25,17 @@ nav {
   font-size: 3em;
 }
 
+/* .sliding-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sliding-card.slide-in-overlay {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
 
 @font-face {
   font-family: "Oswald";
@@ -401,6 +412,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -459,6 +471,7 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -480,6 +493,7 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -695,6 +709,7 @@ progress {
   --bs-gutter-y: 0;
   width: 100%;
   max-width: 100%;
+  height: auto;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
@@ -4341,10 +4356,11 @@ ul {
 }
 
 .card-body {
-  font-size: 1.5em;
+  font-size: 2em;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
   display: flex;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
