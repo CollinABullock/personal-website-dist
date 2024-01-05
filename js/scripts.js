@@ -18,7 +18,7 @@ function showOverlay(title, info, img) {
       <img class="img-fluid slide-in" src="${img}" alt="${title}" />
       <div class="d-flex align-items-center">
         <div class="p-5">
-          <h2 class="bg-light p-4 rounded-4 fw-bolder text-primary fw-bolder mb-2 overlayCardTitle">${title}</h2>
+          
           <p>${info}</p>
         </div>
       </div>
