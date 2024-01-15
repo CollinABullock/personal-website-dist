@@ -1404,7 +1404,7 @@ progress {
   }
   .col-lg-11 {
     flex: 0 0 auto;
-    width: 91.66666667%;
+    width: 100%
   }
   .col-lg-12 {
     flex: 0 0 auto;
@@ -1565,7 +1565,7 @@ progress {
   }
   .col-xl-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 100%;
   }
   .col-xl-10 {
     flex: 0 0 auto;
@@ -1730,7 +1730,7 @@ progress {
   }
   .col-xxl-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 100%
   }
   .col-xxl-9 {
     flex: 0 0 auto;
@@ -4403,6 +4403,10 @@ ul {
   color: white;
   border-radius: 20px;
   padding: 10px;
+}
+
+.projects {
+  font-size: 2rem;
 }
 
 .icons {
