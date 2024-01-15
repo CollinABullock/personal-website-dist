@@ -4333,7 +4333,7 @@ ul {
   --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   min-width: 0;
   height: auto;
